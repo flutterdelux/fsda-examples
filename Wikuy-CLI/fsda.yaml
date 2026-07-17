@@ -1,0 +1,17 @@
+workspace: Wikuy-CLI
+created_at: '2026-07-17T09:52:37.019536'
+
+fsda_cli: '1.0.5'
+
+packages:
+  - app_core
+  - app_l10n
+  - app_ui
+  # - infra_connectivity_plus
+  # - infra_dio
+  # - infra_flutter_secure_storage
+  # - infra_hive
+  - infra_http
+  - infra_logging
+  # - infra_shared_preferences
+  # - infra_sqflite

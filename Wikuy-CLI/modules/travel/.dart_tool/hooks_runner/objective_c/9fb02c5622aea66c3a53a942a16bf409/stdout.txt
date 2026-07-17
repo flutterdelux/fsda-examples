@@ -1,0 +1,57 @@
+Running `(cd /Users/indre/.pub-cache/hosted/pub.dev/objective_c-9.4.1/; TMPDIR=/var/folders/hk/wmphmvy127v7557wsghgk_4m0000gn/T/ PATH=/Users/indre/Library/Python/3.9/bin:/opt/homebrew/share/google-cloud-sdk/bin:/Users/indre/.antigravity-ide/antigravity-ide/bin:/Users/indre/.antigravity/antigravity/bin:/Applications/Android Studio.app/Contents/jbr/Contents/Home/bin:/opt/homebrew/opt/ruby/bin:/Users/Development/Installation/flutter/bin/:/Users/indre/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/indre/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Users/Development/Installation/flutter/bin:/Users/indre/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/indre/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli:/Users/Development/Installation/flutter/bin/:/Users/indre/Library/Python/3.9/bin:/opt/homebrew/share/google-cloud-sdk/bin:/Users/indre/.antigravity-ide/antigravity-ide/bin:/Users/indre/.antigravity/antigravity/bin:/Applications/Android Studio.app/Contents/jbr/Contents/Home/bin:/opt/homebrew/opt/ruby/bin:/Users/indre/Library/Android/sdk/platform-tools:/Users/indre/.pub-cache/bin:/Users/indre/Library/Android/sdk/platform-tools:/Users/indre/.pub-cache/bin HOME=/Users/indre /Users/Development/Installation/flutter/bin/cache/dart-sdk/bin/dart --packages=/Users/flutter-delux/fsda/fsda-examples/Wikuy-CLI/modules/travel/.dart_tool/package_config.json /Users/flutter-delux/fsda/fsda-examples/Wikuy-CLI/modules/travel/.dart_tool/hooks_runner/objective_c/9fb02c5622aea66c3a53a942a16bf409/hook.dill --config=/Users/flutter-delux/fsda/fsda-examples/Wikuy-CLI/modules/travel/.dart_tool/hooks_runner/objective_c/9fb02c5622aea66c3a53a942a16bf409/input.json )`.
+INFO: 2026-07-17 09:54:47.345531: No compiler set in BuildInput.cCompiler.cc. Falling back to assuming clang is in the PATH.
+
+INFO: 2026-07-17 09:54:47.347692: Running: clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk -target arm64-apple-darwin -mmacos-version-min=12 -c /Users/indre/.pub-cache/hosted/pub.dev/objective_c-9.4.1/src/include/dart_api_dl.c -fpic -gline-tables-only -I src -o /Users/flutter-delux/fsda/fsda-examples/Wikuy-CLI/modules/travel/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/include/dart_api_dl.c.o
+
+INFO: 2026-07-17 09:54:47.348472: Running: clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk -target arm64-apple-darwin -mmacos-version-min=12 -c /Users/indre/.pub-cache/hosted/pub.dev/objective_c-9.4.1/src/objective_c.c -fpic -gline-tables-only -I src -o /Users/flutter-delux/fsda/fsda-examples/Wikuy-CLI/modules/travel/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/objective_c.c.o
+
+INFO: 2026-07-17 09:54:47.348609: Running: clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk -target arm64-apple-darwin -mmacos-version-min=12 -x objective-c -fobjc-arc -c /Users/indre/.pub-cache/hosted/pub.dev/objective_c-9.4.1/src/input_stream_adapter.m -fpic -gline-tables-only -I src -o /Users/flutter-delux/fsda/fsda-examples/Wikuy-CLI/modules/travel/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/input_stream_adapter.m.o
+
+INFO: 2026-07-17 09:54:47.348692: Running: clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk -target arm64-apple-darwin -mmacos-version-min=12 -x objective-c -fobjc-arc -c /Users/indre/.pub-cache/hosted/pub.dev/objective_c-9.4.1/src/objective_c.m -fpic -gline-tables-only -I src -o /Users/flutter-delux/fsda/fsda-examples/Wikuy-CLI/modules/travel/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/objective_c.m.o
+
+INFO: 2026-07-17 09:54:47.348769: Running: clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk -target arm64-apple-darwin -mmacos-version-min=12 -x objective-c -fobjc-arc -c /Users/indre/.pub-cache/hosted/pub.dev/objective_c-9.4.1/src/observer.m -fpic -gline-tables-only -I src -o /Users/flutter-delux/fsda/fsda-examples/Wikuy-CLI/modules/travel/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/observer.m.o
+
+INFO: 2026-07-17 09:54:47.348844: Running: clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk -target arm64-apple-darwin -mmacos-version-min=12 -x objective-c -fobjc-arc -c /Users/indre/.pub-cache/hosted/pub.dev/objective_c-9.4.1/src/ns_number.m -fpic -gline-tables-only -I src -o /Users/flutter-delux/fsda/fsda-examples/Wikuy-CLI/modules/travel/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/ns_number.m.o
+
+INFO: 2026-07-17 09:54:47.348919: Running: clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk -target arm64-apple-darwin -mmacos-version-min=12 -x objective-c -fobjc-arc -c /Users/indre/.pub-cache/hosted/pub.dev/objective_c-9.4.1/src/protocol.m -fpic -gline-tables-only -I src -o /Users/flutter-delux/fsda/fsda-examples/Wikuy-CLI/modules/travel/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/protocol.m.o
+
+INFO: 2026-07-17 09:54:47.348996: Running: clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk -target arm64-apple-darwin -mmacos-version-min=12 -x objective-c -fobjc-arc -c /Users/indre/.pub-cache/hosted/pub.dev/objective_c-9.4.1/src/objective_c_bindings_generated.m -fpic -gline-tables-only -I src -o /Users/flutter-delux/fsda/fsda-examples/Wikuy-CLI/modules/travel/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/objective_c_bindings_generated.m.o
+
+INFO: 2026-07-17 09:54:47.533277: 
+INFO: 2026-07-17 09:54:47.533450: 
+
+sda-examples/Wikuy-CLI/modules/travel/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/include/dart_api_dl.c.o
+
+INFO: 2026-07-17 09:54:47.534471: 
+INFO: 2026-07-17 09:54:47.534520: 
+INFO: 2026-07-17 09:54:47.534591: Generated /Users/flutter-delux/fsda/fsda-examples/Wikuy-CLI/modules/travel/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/objective_c.c.o
+
+INFO: 2026-07-17 09:54:47.535823: 
+INFO: 2026-07-17 09:54:47.535841: 
+INFO: 2026-07-17 09:54:47.535849: Generated /Users/flutter-delux/fsda/fsda-examples/Wikuy-CLI/modules/travel/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/observer.m.o
+
+INFO: 2026-07-17 09:54:47.538621: 
+INFO: 2026-07-17 09:54:47.538676: 
+
+INFO: 2026-07-17 09:54:47.538709: Generated /Users/flutter-delux/fsda/fsda-examples/Wikuy-CLI/modules/travel/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/protocol.m.o
+
+INFO: 2026-07-17 09:54:47.727332: 
+INFO: 2026-07-17 09:54:47.727369: 
+INFO: 2026-07-17 09:54:47.727379: Generated /Users/flutter-delux/fsda/fsda-examples/Wikuy-CLI/modules/travel/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/ns_number.m.o
+
+INFO: 2026-07-17 09:54:47.732542: 
+INFO: 2026-07-17 09:54:47.732567: 
+INFO: 2026-07-17 09:54:47.732576: Generated /Users/flutter-delux/fsda/fsda-examples/Wikuy-CLI/modules/travel/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/objective_c.m.o
+
+INFO: 2026-07-17 09:54:47.733487: Generated /Users/flutter-delux/fsda/fsda-examples/Wikuy-CLI/modules/travel/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/input_stream_adapter.m.o
+
+INFO: 2026-07-17 09:54:47.747266: 
+INFO: 2026-07-17 09:54:47.747290: 
+INFO: 2026-07-17 09:54:47.747301: Generated /Users/flutter-delux/fsda/fsda-examples/Wikuy-CLI/modules/travel/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/objective_c_bindings_generated.m.o
+
+INFO: 2026-07-17 09:54:47.747549: Running: clang -shared -Wl,-encryptable -undefined dynamic_lookup -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk -target arm64-apple-darwin -mmacos-version-min=12 /Users/flutter-delux/fsda/fsda-examples/Wikuy-CLI/modules/travel/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/include/dart_api_dl.c.o /Users/flutter-delux/fsda/fsda-examples/Wikuy-CLI/modules/travel/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/objective_c.c.o /Users/flutter-delux/fsda/fsda-examples/Wikuy-CLI/modules/travel/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/input_stream_adapter.m.o /Users/flutter-delux/fsda/fsda-examples/Wikuy-CLI/modules/travel/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/objective_c.m.o /Users/flutter-delux/fsda/fsda-examples/Wikuy-CLI/modules/travel/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/observer.m.o /Users/flutter-delux/fsda/fsda-examples/Wikuy-CLI/modules/travel/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/ns_number.m.o /Users/flutter-delux/fsda/fsda-examples/Wikuy-CLI/modules/travel/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/protocol.m.o /Users/flutter-delux/fsda/fsda-examples/Wikuy-CLI/modules/travel/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/obj/src/objective_c_bindings_generated.m.o -o /Users/flutter-delux/fsda/fsda-examples/Wikuy-CLI/modules/travel/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/objective_c.dylib
+
+INFO: 2026-07-17 09:54:47.838491: 
+INFO: 2026-07-17 09:54:47.838545: 
+INFO: 2026-07-17 09:54:47.838555: Generated /Users/flutter-delux/fsda/fsda-examples/Wikuy-CLI/modules/travel/.dart_tool/hooks_runner/shared/objective_c/build/9fb02c5622/objective_c.dylib
+

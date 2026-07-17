@@ -1,0 +1,31 @@
+package_rename_config:
+  android:
+    app_name: Wikuy
+    package_name: com.fdelux.wikuy
+    override_old_package: com.example.wikuy
+    lang: kotlin
+
+  ios:
+    app_name: Wikuy
+    bundle_name: wikuy
+    bundle_id: com.fdelux.wikuy
+
+  web:
+    app_name: Wikuy
+    description: Wikuy
+
+  linux:
+    app_name: Wikuy
+    package_name: com.fdelux.wikuy
+    exe_name: wikuy-linux-x64
+
+  windows:
+    app_name: Wikuy
+    organization: FDelux
+    copyright_notice: Copyright ©️ 2026 FDelux. All rights reserved.
+    exe_name: wikuy-win32
+
+  macos:
+    app_name: Wikuy
+    bundle_id: com.fdelux.wikuy
+    copyright_notice: Copyright ©️ 2026 FDelux. All rights reserved.

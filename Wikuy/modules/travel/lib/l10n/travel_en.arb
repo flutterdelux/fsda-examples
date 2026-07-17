@@ -1,0 +1,16 @@
+{
+  "@@locale": "en",
+  "@failureTravelNotFound": {
+    "description": "========================= Failure ========================="
+  },
+  "failureTravelNotFound": "Travel not found",
+  "failureDestinationNotFound": "Destination not found",
+  "@destinationAlt": {
+    "description": "========================= Destination ========================="
+  },
+  "destinationAlt": "Destination",
+  "destinationListTitle": "Destination List",
+  "destinationListEmptyTitle": "No Destination Found",
+  "destinationListEmptyMessage": "No destination found at the moment",
+  "destinationListErrorTitle": "Failed to Load Destination List"
+}

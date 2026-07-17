@@ -1,0 +1,16 @@
+{
+  "@@locale": "id",
+  "@failureTravelNotFound": {
+    "description": "========================= Failure ========================="
+  },
+  "failureTravelNotFound": "Travel tidak ditemukan",
+  "failureDestinationNotFound": "Destination tidak ditemukan",
+  "@destinationAlt": {
+    "description": "========================= Destination ========================="
+  },
+  "destinationAlt": "Destination",
+  "destinationListTitle": "Destination List",
+  "destinationListEmptyTitle": "No Destination Found",
+  "destinationListEmptyMessage": "No destination found at the moment",
+  "destinationListErrorTitle": "Failed to Load Destination List"
+}
