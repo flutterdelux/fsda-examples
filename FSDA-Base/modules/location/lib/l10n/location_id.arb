@@ -9,8 +9,8 @@
     "description": "========================= City ========================="
   },
   "cityAlt": "City",
-  "cityListTitle": "City List",
-  "cityListEmptyTitle": "No City Found",
-  "cityListEmptyMessage": "No city found at the moment",
-  "cityListErrorTitle": "Failed to Load City List"
+  "cityListTitle": "Daftar Kota",
+  "cityListEmptyTitle": "Tidak ada kota ditemukan",
+  "cityListEmptyMessage": "Tidak ada kota yang ditemukan saat ini",
+  "cityListErrorTitle": "Gagal memuat daftar kota"
 }

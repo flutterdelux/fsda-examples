@@ -9,7 +9,6 @@ extension LocationFailureX on LocationFailure {
     return switch (this) {
       LocationFailure.locationNotFound => l10n.failureLocationNotFound,
       LocationFailure.cityNotFound => l10n.failureCityNotFound,
-
     };
   }
 }

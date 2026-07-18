@@ -3,7 +3,6 @@ import 'package:app_ui/app_ui.dart';
 import 'package:flutter/material.dart';
 import '../../../../../generated/location_localizations.dart';
 
-
 class CityListEmptyFeedback extends StatelessWidget {
   final VoidCallback onRefresh;
   const CityListEmptyFeedback({super.key, required this.onRefresh});

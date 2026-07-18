@@ -18,14 +18,14 @@ class LocationLocalizationsId extends LocationLocalizations {
   String get cityAlt => 'City';
 
   @override
-  String get cityListTitle => 'City List';
+  String get cityListTitle => 'Daftar Kota';
 
   @override
-  String get cityListEmptyTitle => 'No City Found';
+  String get cityListEmptyTitle => 'Tidak ada kota ditemukan';
 
   @override
-  String get cityListEmptyMessage => 'No city found at the moment';
+  String get cityListEmptyMessage => 'Tidak ada kota yang ditemukan saat ini';
 
   @override
-  String get cityListErrorTitle => 'Failed to Load City List';
+  String get cityListErrorTitle => 'Gagal memuat daftar kota';
 }
