@@ -12,17 +12,24 @@ class AttendanceLocalizationsId extends AttendanceLocalizations {
   String get attendanceAlt => 'Attendance';
 
   @override
-  String get failureAttendanceNotFound => 'Attendance tidak ditemukan';
+  String get failureAttendanceNotFound => 'Kehadiran tidak ditemukan';
 
   @override
-  String get attendanceListTitle => 'Attendance List';
+  String get attendanceListTitle => 'Daftar Kehadiran';
 
   @override
-  String get attendanceListEmptyTitle => 'No Attendance Found';
+  String get attendanceListEmptyTitle => 'Tidak ada kehadiran ditemukan';
 
   @override
-  String get attendanceListEmptyMessage => 'No attendance found at the moment';
+  String get attendanceListEmptyMessage =>
+      'Tidak ada kehadiran yang ditemukan saat ini';
 
   @override
-  String get attendanceListErrorTitle => 'Failed to Load Attendance List';
+  String get attendanceListErrorTitle => 'Gagal memuat daftar kehadiran';
+
+  @override
+  String get attendanceTypeClockIn => 'Masuk';
+
+  @override
+  String get attendanceTypeClockOut => 'Keluar';
 }

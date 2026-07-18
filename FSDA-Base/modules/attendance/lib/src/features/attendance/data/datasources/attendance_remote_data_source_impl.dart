@@ -12,7 +12,7 @@ class AttendanceRemoteDataSourceImpl implements AttendanceRemoteDataSource {
   // ------- Retrieval -------
 
   @override
-  Stream<List<AttendanceDto>> attendanceList() {
+  Stream<List<AttendanceDto>> watchAttendanceList() {
     return _apiClient.stream<List>('/attendances/stream').map((data) {
       return data
           .map((e) => AttendanceDto.fromJson(e as Map<String, dynamic>))

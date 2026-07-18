@@ -8,5 +8,7 @@
   "attendanceListTitle": "Attendance List",
   "attendanceListEmptyTitle": "No Attendance Found",
   "attendanceListEmptyMessage": "No attendance found at the moment",
-  "attendanceListErrorTitle": "Failed to Load Attendance List"
+  "attendanceListErrorTitle": "Failed to Load Attendance List",
+  "attendanceTypeClockIn": "Clock In",
+  "attendanceTypeClockOut": "Clock Out"
 }

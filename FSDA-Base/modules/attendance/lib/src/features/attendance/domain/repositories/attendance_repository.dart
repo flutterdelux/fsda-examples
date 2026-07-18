@@ -4,7 +4,7 @@ import '../entities/attendance_entity.dart';
 abstract interface class AttendanceRepository {
   // ------- Retrieval -------
 
-  StreamResult<List<AttendanceEntity>> attendanceList();
+  StreamResult<List<AttendanceEntity>> watchAttendanceList();
 
   // ------- Mutation -------
 }

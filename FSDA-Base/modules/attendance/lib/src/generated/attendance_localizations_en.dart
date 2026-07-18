@@ -25,4 +25,10 @@ class AttendanceLocalizationsEn extends AttendanceLocalizations {
 
   @override
   String get attendanceListErrorTitle => 'Failed to Load Attendance List';
+
+  @override
+  String get attendanceTypeClockIn => 'Clock In';
+
+  @override
+  String get attendanceTypeClockOut => 'Clock Out';
 }

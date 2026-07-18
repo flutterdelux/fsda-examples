@@ -4,9 +4,11 @@
     "description": "========================= Attendance ========================="
   },
   "attendanceAlt": "Attendance",
-  "failureAttendanceNotFound": "Attendance tidak ditemukan",
-  "attendanceListTitle": "Attendance List",
-  "attendanceListEmptyTitle": "No Attendance Found",
-  "attendanceListEmptyMessage": "No attendance found at the moment",
-  "attendanceListErrorTitle": "Failed to Load Attendance List"
+  "failureAttendanceNotFound": "Kehadiran tidak ditemukan",
+  "attendanceListTitle": "Daftar Kehadiran",
+  "attendanceListEmptyTitle": "Tidak ada kehadiran ditemukan",
+  "attendanceListEmptyMessage": "Tidak ada kehadiran yang ditemukan saat ini",
+  "attendanceListErrorTitle": "Gagal memuat daftar kehadiran",
+  "attendanceTypeClockIn": "Masuk",
+  "attendanceTypeClockOut": "Keluar"
 }

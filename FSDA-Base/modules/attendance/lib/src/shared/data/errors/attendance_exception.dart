@@ -6,20 +6,26 @@ import '../../domain/errors/attendance_failure.dart';
 part 'attendance_exception.freezed.dart';
 
 @freezed
-sealed class AttendanceException with _$AttendanceException implements AppException {
+sealed class AttendanceException
+    with _$AttendanceException
+    implements AppException {
   const AttendanceException._();
 
-  const factory AttendanceException.attendanceNotFound({String? msg, StackTrace? st}) =
-      _AttendanceNotFound;
+  const factory AttendanceException.attendanceNotFound({
+    String? msg,
+    StackTrace? st,
+  }) = _AttendanceNotFound;
 
   @override
-  String get message => when(attendanceNotFound: (msg, _) => msg ?? 'Attendance not found');
+  String get message =>
+      when(attendanceNotFound: (msg, _) => msg ?? 'Attendance not found');
 
   @override
   StackTrace? get stackTrace => st;
 
   @override
-  Failure toFailure() => when(attendanceNotFound: (_, _) => AttendanceFailure.attendanceNotFound);
+  Failure toFailure() =>
+      when(attendanceNotFound: (_, _) => AttendanceFailure.attendanceNotFound);
 
   static AppException fromApiResponse(ApiResponse response, {StackTrace? st}) {
     return CoreException.fromException(response.body.toString(), st: st);

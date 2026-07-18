@@ -2,6 +2,8 @@ import 'package:app_core/app_core.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 import '../../domain/entities/attendance_entity.dart';
+import '../../domain/enums/attendance_type.dart';
+import '../converters/attendance_type_converter.dart';
 
 part 'attendance_dto.freezed.dart';
 part 'attendance_dto.g.dart';
@@ -13,6 +15,7 @@ abstract class AttendanceDto with _$AttendanceDto {
   const factory AttendanceDto({
     required int id,
     required String userId,
+    @AttendanceTypeConverter() required AttendanceType type,
     @UtcDateTimeConverter() required DateTime clockAt,
     @UtcDateTimeConverter() required DateTime createdAt,
     @UtcDateTimeConverter() required DateTime updatedAt,
@@ -25,6 +28,7 @@ abstract class AttendanceDto with _$AttendanceDto {
     return AttendanceEntity(
       id: id,
       userId: userId,
+      type: type,
       clockAt: clockAt,
       createdAt: createdAt,
       updatedAt: updatedAt,

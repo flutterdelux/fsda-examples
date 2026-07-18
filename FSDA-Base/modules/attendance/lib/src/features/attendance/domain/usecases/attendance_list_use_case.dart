@@ -13,5 +13,5 @@ class AttendanceListUseCase
 
   @override
   StreamResult<List<AttendanceEntity>> call() =>
-      _repository.attendanceList();
+      _repository.watchAttendanceList();
 }

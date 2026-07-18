@@ -136,6 +136,18 @@ abstract class AttendanceLocalizations {
   /// In en, this message translates to:
   /// **'Failed to Load Attendance List'**
   String get attendanceListErrorTitle;
+
+  /// No description provided for @attendanceTypeClockIn.
+  ///
+  /// In en, this message translates to:
+  /// **'Clock In'**
+  String get attendanceTypeClockIn;
+
+  /// No description provided for @attendanceTypeClockOut.
+  ///
+  /// In en, this message translates to:
+  /// **'Clock Out'**
+  String get attendanceTypeClockOut;
 }
 
 class _AttendanceLocalizationsDelegate

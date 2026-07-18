@@ -2,6 +2,7 @@ import 'package:app_ui/app_ui.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../domain/entities/attendance_entity.dart';
+import '../../../shared/extensions/attendance_type_x.dart';
 
 class AttendanceListItem extends StatelessWidget {
   final int index;
@@ -17,7 +18,7 @@ class AttendanceListItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppListTile(
-      leading: AppLeadingIndex(number: index + 1),
+      leading: AppLeadingIcon(icon: attendance.type.icon),
       title: attendance.userId,
       subtitle: attendance.clockAt.toString(),
       includeChevron: true,

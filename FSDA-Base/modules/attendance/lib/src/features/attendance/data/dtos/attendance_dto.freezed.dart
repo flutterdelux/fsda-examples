@@ -15,7 +15,7 @@ T _$identity<T>(T value) => value;
 /// @nodoc
 mixin _$AttendanceDto {
 
- int get id; String get userId;@UtcDateTimeConverter() DateTime get clockAt;@UtcDateTimeConverter() DateTime get createdAt;@UtcDateTimeConverter() DateTime get updatedAt;
+ int get id; String get userId;@AttendanceTypeConverter() AttendanceType get type;@UtcDateTimeConverter() DateTime get clockAt;@UtcDateTimeConverter() DateTime get createdAt;@UtcDateTimeConverter() DateTime get updatedAt;
 /// Create a copy of AttendanceDto
 /// with the given fields replaced by the non-null parameter values.
 @JsonKey(includeFromJson: false, includeToJson: false)
@@ -28,16 +28,16 @@ $AttendanceDtoCopyWith<AttendanceDto> get copyWith => _$AttendanceDtoCopyWithImp
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is AttendanceDto&&(identical(other.id, id) || other.id == id)&&(identical(other.userId, userId) || other.userId == userId)&&(identical(other.clockAt, clockAt) || other.clockAt == clockAt)&&(identical(other.createdAt, createdAt) || other.createdAt == createdAt)&&(identical(other.updatedAt, updatedAt) || other.updatedAt == updatedAt));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is AttendanceDto&&(identical(other.id, id) || other.id == id)&&(identical(other.userId, userId) || other.userId == userId)&&(identical(other.type, type) || other.type == type)&&(identical(other.clockAt, clockAt) || other.clockAt == clockAt)&&(identical(other.createdAt, createdAt) || other.createdAt == createdAt)&&(identical(other.updatedAt, updatedAt) || other.updatedAt == updatedAt));
 }
 
 @JsonKey(includeFromJson: false, includeToJson: false)
 @override
-int get hashCode => Object.hash(runtimeType,id,userId,clockAt,createdAt,updatedAt);
+int get hashCode => Object.hash(runtimeType,id,userId,type,clockAt,createdAt,updatedAt);
 
 @override
 String toString() {
-  return 'AttendanceDto(id: $id, userId: $userId, clockAt: $clockAt, createdAt: $createdAt, updatedAt: $updatedAt)';
+  return 'AttendanceDto(id: $id, userId: $userId, type: $type, clockAt: $clockAt, createdAt: $createdAt, updatedAt: $updatedAt)';
 }
 
 
@@ -48,7 +48,7 @@ abstract mixin class $AttendanceDtoCopyWith<$Res>  {
   factory $AttendanceDtoCopyWith(AttendanceDto value, $Res Function(AttendanceDto) _then) = _$AttendanceDtoCopyWithImpl;
 @useResult
 $Res call({
- int id, String userId,@UtcDateTimeConverter() DateTime clockAt,@UtcDateTimeConverter() DateTime createdAt,@UtcDateTimeConverter() DateTime updatedAt
+ int id, String userId,@AttendanceTypeConverter() AttendanceType type,@UtcDateTimeConverter() DateTime clockAt,@UtcDateTimeConverter() DateTime createdAt,@UtcDateTimeConverter() DateTime updatedAt
 });
 
 
@@ -65,11 +65,12 @@ class _$AttendanceDtoCopyWithImpl<$Res>
 
 /// Create a copy of AttendanceDto
 /// with the given fields replaced by the non-null parameter values.
-@pragma('vm:prefer-inline') @override $Res call({Object? id = null,Object? userId = null,Object? clockAt = null,Object? createdAt = null,Object? updatedAt = null,}) {
+@pragma('vm:prefer-inline') @override $Res call({Object? id = null,Object? userId = null,Object? type = null,Object? clockAt = null,Object? createdAt = null,Object? updatedAt = null,}) {
   return _then(_self.copyWith(
 id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
 as int,userId: null == userId ? _self.userId : userId // ignore: cast_nullable_to_non_nullable
-as String,clockAt: null == clockAt ? _self.clockAt : clockAt // ignore: cast_nullable_to_non_nullable
+as String,type: null == type ? _self.type : type // ignore: cast_nullable_to_non_nullable
+as AttendanceType,clockAt: null == clockAt ? _self.clockAt : clockAt // ignore: cast_nullable_to_non_nullable
 as DateTime,createdAt: null == createdAt ? _self.createdAt : createdAt // ignore: cast_nullable_to_non_nullable
 as DateTime,updatedAt: null == updatedAt ? _self.updatedAt : updatedAt // ignore: cast_nullable_to_non_nullable
 as DateTime,
@@ -157,10 +158,10 @@ return $default(_that);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( int id,  String userId, @UtcDateTimeConverter()  DateTime clockAt, @UtcDateTimeConverter()  DateTime createdAt, @UtcDateTimeConverter()  DateTime updatedAt)?  $default,{required TResult orElse(),}) {final _that = this;
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( int id,  String userId, @AttendanceTypeConverter()  AttendanceType type, @UtcDateTimeConverter()  DateTime clockAt, @UtcDateTimeConverter()  DateTime createdAt, @UtcDateTimeConverter()  DateTime updatedAt)?  $default,{required TResult orElse(),}) {final _that = this;
 switch (_that) {
 case _AttendanceDto() when $default != null:
-return $default(_that.id,_that.userId,_that.clockAt,_that.createdAt,_that.updatedAt);case _:
+return $default(_that.id,_that.userId,_that.type,_that.clockAt,_that.createdAt,_that.updatedAt);case _:
   return orElse();
 
 }
@@ -178,10 +179,10 @@ return $default(_that.id,_that.userId,_that.clockAt,_that.createdAt,_that.update
 /// }
 /// ```
 
-@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( int id,  String userId, @UtcDateTimeConverter()  DateTime clockAt, @UtcDateTimeConverter()  DateTime createdAt, @UtcDateTimeConverter()  DateTime updatedAt)  $default,) {final _that = this;
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( int id,  String userId, @AttendanceTypeConverter()  AttendanceType type, @UtcDateTimeConverter()  DateTime clockAt, @UtcDateTimeConverter()  DateTime createdAt, @UtcDateTimeConverter()  DateTime updatedAt)  $default,) {final _that = this;
 switch (_that) {
 case _AttendanceDto():
-return $default(_that.id,_that.userId,_that.clockAt,_that.createdAt,_that.updatedAt);case _:
+return $default(_that.id,_that.userId,_that.type,_that.clockAt,_that.createdAt,_that.updatedAt);case _:
   throw StateError('Unexpected subclass');
 
 }
@@ -198,10 +199,10 @@ return $default(_that.id,_that.userId,_that.clockAt,_that.createdAt,_that.update
 /// }
 /// ```
 
-@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( int id,  String userId, @UtcDateTimeConverter()  DateTime clockAt, @UtcDateTimeConverter()  DateTime createdAt, @UtcDateTimeConverter()  DateTime updatedAt)?  $default,) {final _that = this;
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( int id,  String userId, @AttendanceTypeConverter()  AttendanceType type, @UtcDateTimeConverter()  DateTime clockAt, @UtcDateTimeConverter()  DateTime createdAt, @UtcDateTimeConverter()  DateTime updatedAt)?  $default,) {final _that = this;
 switch (_that) {
 case _AttendanceDto() when $default != null:
-return $default(_that.id,_that.userId,_that.clockAt,_that.createdAt,_that.updatedAt);case _:
+return $default(_that.id,_that.userId,_that.type,_that.clockAt,_that.createdAt,_that.updatedAt);case _:
   return null;
 
 }
@@ -213,11 +214,12 @@ return $default(_that.id,_that.userId,_that.clockAt,_that.createdAt,_that.update
 @JsonSerializable()
 
 class _AttendanceDto extends AttendanceDto {
-  const _AttendanceDto({required this.id, required this.userId, @UtcDateTimeConverter() required this.clockAt, @UtcDateTimeConverter() required this.createdAt, @UtcDateTimeConverter() required this.updatedAt}): super._();
+  const _AttendanceDto({required this.id, required this.userId, @AttendanceTypeConverter() required this.type, @UtcDateTimeConverter() required this.clockAt, @UtcDateTimeConverter() required this.createdAt, @UtcDateTimeConverter() required this.updatedAt}): super._();
   factory _AttendanceDto.fromJson(Map<String, dynamic> json) => _$AttendanceDtoFromJson(json);
 
 @override final  int id;
 @override final  String userId;
+@override@AttendanceTypeConverter() final  AttendanceType type;
 @override@UtcDateTimeConverter() final  DateTime clockAt;
 @override@UtcDateTimeConverter() final  DateTime createdAt;
 @override@UtcDateTimeConverter() final  DateTime updatedAt;
@@ -235,16 +237,16 @@ Map<String, dynamic> toJson() {
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is _AttendanceDto&&(identical(other.id, id) || other.id == id)&&(identical(other.userId, userId) || other.userId == userId)&&(identical(other.clockAt, clockAt) || other.clockAt == clockAt)&&(identical(other.createdAt, createdAt) || other.createdAt == createdAt)&&(identical(other.updatedAt, updatedAt) || other.updatedAt == updatedAt));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _AttendanceDto&&(identical(other.id, id) || other.id == id)&&(identical(other.userId, userId) || other.userId == userId)&&(identical(other.type, type) || other.type == type)&&(identical(other.clockAt, clockAt) || other.clockAt == clockAt)&&(identical(other.createdAt, createdAt) || other.createdAt == createdAt)&&(identical(other.updatedAt, updatedAt) || other.updatedAt == updatedAt));
 }
 
 @JsonKey(includeFromJson: false, includeToJson: false)
 @override
-int get hashCode => Object.hash(runtimeType,id,userId,clockAt,createdAt,updatedAt);
+int get hashCode => Object.hash(runtimeType,id,userId,type,clockAt,createdAt,updatedAt);
 
 @override
 String toString() {
-  return 'AttendanceDto(id: $id, userId: $userId, clockAt: $clockAt, createdAt: $createdAt, updatedAt: $updatedAt)';
+  return 'AttendanceDto(id: $id, userId: $userId, type: $type, clockAt: $clockAt, createdAt: $createdAt, updatedAt: $updatedAt)';
 }
 
 
@@ -255,7 +257,7 @@ abstract mixin class _$AttendanceDtoCopyWith<$Res> implements $AttendanceDtoCopy
   factory _$AttendanceDtoCopyWith(_AttendanceDto value, $Res Function(_AttendanceDto) _then) = __$AttendanceDtoCopyWithImpl;
 @override @useResult
 $Res call({
- int id, String userId,@UtcDateTimeConverter() DateTime clockAt,@UtcDateTimeConverter() DateTime createdAt,@UtcDateTimeConverter() DateTime updatedAt
+ int id, String userId,@AttendanceTypeConverter() AttendanceType type,@UtcDateTimeConverter() DateTime clockAt,@UtcDateTimeConverter() DateTime createdAt,@UtcDateTimeConverter() DateTime updatedAt
 });
 
 
@@ -272,11 +274,12 @@ class __$AttendanceDtoCopyWithImpl<$Res>
 
 /// Create a copy of AttendanceDto
 /// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? id = null,Object? userId = null,Object? clockAt = null,Object? createdAt = null,Object? updatedAt = null,}) {
+@override @pragma('vm:prefer-inline') $Res call({Object? id = null,Object? userId = null,Object? type = null,Object? clockAt = null,Object? createdAt = null,Object? updatedAt = null,}) {
   return _then(_AttendanceDto(
 id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
 as int,userId: null == userId ? _self.userId : userId // ignore: cast_nullable_to_non_nullable
-as String,clockAt: null == clockAt ? _self.clockAt : clockAt // ignore: cast_nullable_to_non_nullable
+as String,type: null == type ? _self.type : type // ignore: cast_nullable_to_non_nullable
+as AttendanceType,clockAt: null == clockAt ? _self.clockAt : clockAt // ignore: cast_nullable_to_non_nullable
 as DateTime,createdAt: null == createdAt ? _self.createdAt : createdAt // ignore: cast_nullable_to_non_nullable
 as DateTime,updatedAt: null == updatedAt ? _self.updatedAt : updatedAt // ignore: cast_nullable_to_non_nullable
 as DateTime,

@@ -14,7 +14,7 @@ T _$identity<T>(T value) => value;
 /// @nodoc
 mixin _$AttendanceEntity {
 
- int get id; String get userId; DateTime get clockAt; DateTime get createdAt; DateTime get updatedAt;
+ int get id; String get userId; AttendanceType get type; DateTime get clockAt; DateTime get createdAt; DateTime get updatedAt;
 /// Create a copy of AttendanceEntity
 /// with the given fields replaced by the non-null parameter values.
 @JsonKey(includeFromJson: false, includeToJson: false)
@@ -25,16 +25,16 @@ $AttendanceEntityCopyWith<AttendanceEntity> get copyWith => _$AttendanceEntityCo
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is AttendanceEntity&&(identical(other.id, id) || other.id == id)&&(identical(other.userId, userId) || other.userId == userId)&&(identical(other.clockAt, clockAt) || other.clockAt == clockAt)&&(identical(other.createdAt, createdAt) || other.createdAt == createdAt)&&(identical(other.updatedAt, updatedAt) || other.updatedAt == updatedAt));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is AttendanceEntity&&(identical(other.id, id) || other.id == id)&&(identical(other.userId, userId) || other.userId == userId)&&(identical(other.type, type) || other.type == type)&&(identical(other.clockAt, clockAt) || other.clockAt == clockAt)&&(identical(other.createdAt, createdAt) || other.createdAt == createdAt)&&(identical(other.updatedAt, updatedAt) || other.updatedAt == updatedAt));
 }
 
 
 @override
-int get hashCode => Object.hash(runtimeType,id,userId,clockAt,createdAt,updatedAt);
+int get hashCode => Object.hash(runtimeType,id,userId,type,clockAt,createdAt,updatedAt);
 
 @override
 String toString() {
-  return 'AttendanceEntity(id: $id, userId: $userId, clockAt: $clockAt, createdAt: $createdAt, updatedAt: $updatedAt)';
+  return 'AttendanceEntity(id: $id, userId: $userId, type: $type, clockAt: $clockAt, createdAt: $createdAt, updatedAt: $updatedAt)';
 }
 
 
@@ -45,7 +45,7 @@ abstract mixin class $AttendanceEntityCopyWith<$Res>  {
   factory $AttendanceEntityCopyWith(AttendanceEntity value, $Res Function(AttendanceEntity) _then) = _$AttendanceEntityCopyWithImpl;
 @useResult
 $Res call({
- int id, String userId, DateTime clockAt, DateTime createdAt, DateTime updatedAt
+ int id, String userId, AttendanceType type, DateTime clockAt, DateTime createdAt, DateTime updatedAt
 });
 
 
@@ -62,11 +62,12 @@ class _$AttendanceEntityCopyWithImpl<$Res>
 
 /// Create a copy of AttendanceEntity
 /// with the given fields replaced by the non-null parameter values.
-@pragma('vm:prefer-inline') @override $Res call({Object? id = null,Object? userId = null,Object? clockAt = null,Object? createdAt = null,Object? updatedAt = null,}) {
+@pragma('vm:prefer-inline') @override $Res call({Object? id = null,Object? userId = null,Object? type = null,Object? clockAt = null,Object? createdAt = null,Object? updatedAt = null,}) {
   return _then(_self.copyWith(
 id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
 as int,userId: null == userId ? _self.userId : userId // ignore: cast_nullable_to_non_nullable
-as String,clockAt: null == clockAt ? _self.clockAt : clockAt // ignore: cast_nullable_to_non_nullable
+as String,type: null == type ? _self.type : type // ignore: cast_nullable_to_non_nullable
+as AttendanceType,clockAt: null == clockAt ? _self.clockAt : clockAt // ignore: cast_nullable_to_non_nullable
 as DateTime,createdAt: null == createdAt ? _self.createdAt : createdAt // ignore: cast_nullable_to_non_nullable
 as DateTime,updatedAt: null == updatedAt ? _self.updatedAt : updatedAt // ignore: cast_nullable_to_non_nullable
 as DateTime,
@@ -154,10 +155,10 @@ return $default(_that);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( int id,  String userId,  DateTime clockAt,  DateTime createdAt,  DateTime updatedAt)?  $default,{required TResult orElse(),}) {final _that = this;
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( int id,  String userId,  AttendanceType type,  DateTime clockAt,  DateTime createdAt,  DateTime updatedAt)?  $default,{required TResult orElse(),}) {final _that = this;
 switch (_that) {
 case _AttendanceEntity() when $default != null:
-return $default(_that.id,_that.userId,_that.clockAt,_that.createdAt,_that.updatedAt);case _:
+return $default(_that.id,_that.userId,_that.type,_that.clockAt,_that.createdAt,_that.updatedAt);case _:
   return orElse();
 
 }
@@ -175,10 +176,10 @@ return $default(_that.id,_that.userId,_that.clockAt,_that.createdAt,_that.update
 /// }
 /// ```
 
-@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( int id,  String userId,  DateTime clockAt,  DateTime createdAt,  DateTime updatedAt)  $default,) {final _that = this;
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( int id,  String userId,  AttendanceType type,  DateTime clockAt,  DateTime createdAt,  DateTime updatedAt)  $default,) {final _that = this;
 switch (_that) {
 case _AttendanceEntity():
-return $default(_that.id,_that.userId,_that.clockAt,_that.createdAt,_that.updatedAt);case _:
+return $default(_that.id,_that.userId,_that.type,_that.clockAt,_that.createdAt,_that.updatedAt);case _:
   throw StateError('Unexpected subclass');
 
 }
@@ -195,10 +196,10 @@ return $default(_that.id,_that.userId,_that.clockAt,_that.createdAt,_that.update
 /// }
 /// ```
 
-@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( int id,  String userId,  DateTime clockAt,  DateTime createdAt,  DateTime updatedAt)?  $default,) {final _that = this;
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( int id,  String userId,  AttendanceType type,  DateTime clockAt,  DateTime createdAt,  DateTime updatedAt)?  $default,) {final _that = this;
 switch (_that) {
 case _AttendanceEntity() when $default != null:
-return $default(_that.id,_that.userId,_that.clockAt,_that.createdAt,_that.updatedAt);case _:
+return $default(_that.id,_that.userId,_that.type,_that.clockAt,_that.createdAt,_that.updatedAt);case _:
   return null;
 
 }
@@ -210,11 +211,12 @@ return $default(_that.id,_that.userId,_that.clockAt,_that.createdAt,_that.update
 
 
 class _AttendanceEntity implements AttendanceEntity {
-  const _AttendanceEntity({required this.id, required this.userId, required this.clockAt, required this.createdAt, required this.updatedAt});
+  const _AttendanceEntity({required this.id, required this.userId, required this.type, required this.clockAt, required this.createdAt, required this.updatedAt});
   
 
 @override final  int id;
 @override final  String userId;
+@override final  AttendanceType type;
 @override final  DateTime clockAt;
 @override final  DateTime createdAt;
 @override final  DateTime updatedAt;
@@ -229,16 +231,16 @@ _$AttendanceEntityCopyWith<_AttendanceEntity> get copyWith => __$AttendanceEntit
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is _AttendanceEntity&&(identical(other.id, id) || other.id == id)&&(identical(other.userId, userId) || other.userId == userId)&&(identical(other.clockAt, clockAt) || other.clockAt == clockAt)&&(identical(other.createdAt, createdAt) || other.createdAt == createdAt)&&(identical(other.updatedAt, updatedAt) || other.updatedAt == updatedAt));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _AttendanceEntity&&(identical(other.id, id) || other.id == id)&&(identical(other.userId, userId) || other.userId == userId)&&(identical(other.type, type) || other.type == type)&&(identical(other.clockAt, clockAt) || other.clockAt == clockAt)&&(identical(other.createdAt, createdAt) || other.createdAt == createdAt)&&(identical(other.updatedAt, updatedAt) || other.updatedAt == updatedAt));
 }
 
 
 @override
-int get hashCode => Object.hash(runtimeType,id,userId,clockAt,createdAt,updatedAt);
+int get hashCode => Object.hash(runtimeType,id,userId,type,clockAt,createdAt,updatedAt);
 
 @override
 String toString() {
-  return 'AttendanceEntity(id: $id, userId: $userId, clockAt: $clockAt, createdAt: $createdAt, updatedAt: $updatedAt)';
+  return 'AttendanceEntity(id: $id, userId: $userId, type: $type, clockAt: $clockAt, createdAt: $createdAt, updatedAt: $updatedAt)';
 }
 
 
@@ -249,7 +251,7 @@ abstract mixin class _$AttendanceEntityCopyWith<$Res> implements $AttendanceEnti
   factory _$AttendanceEntityCopyWith(_AttendanceEntity value, $Res Function(_AttendanceEntity) _then) = __$AttendanceEntityCopyWithImpl;
 @override @useResult
 $Res call({
- int id, String userId, DateTime clockAt, DateTime createdAt, DateTime updatedAt
+ int id, String userId, AttendanceType type, DateTime clockAt, DateTime createdAt, DateTime updatedAt
 });
 
 
@@ -266,11 +268,12 @@ class __$AttendanceEntityCopyWithImpl<$Res>
 
 /// Create a copy of AttendanceEntity
 /// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? id = null,Object? userId = null,Object? clockAt = null,Object? createdAt = null,Object? updatedAt = null,}) {
+@override @pragma('vm:prefer-inline') $Res call({Object? id = null,Object? userId = null,Object? type = null,Object? clockAt = null,Object? createdAt = null,Object? updatedAt = null,}) {
   return _then(_AttendanceEntity(
 id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
 as int,userId: null == userId ? _self.userId : userId // ignore: cast_nullable_to_non_nullable
-as String,clockAt: null == clockAt ? _self.clockAt : clockAt // ignore: cast_nullable_to_non_nullable
+as String,type: null == type ? _self.type : type // ignore: cast_nullable_to_non_nullable
+as AttendanceType,clockAt: null == clockAt ? _self.clockAt : clockAt // ignore: cast_nullable_to_non_nullable
 as DateTime,createdAt: null == createdAt ? _self.createdAt : createdAt // ignore: cast_nullable_to_non_nullable
 as DateTime,updatedAt: null == updatedAt ? _self.updatedAt : updatedAt // ignore: cast_nullable_to_non_nullable
 as DateTime,

@@ -22,16 +22,16 @@ class AttendanceRepositoryImpl
   // ------- Retrieval -------
 
   @override
-  StreamResult<List<AttendanceEntity>> attendanceList() async* {
+  StreamResult<List<AttendanceEntity>> watchAttendanceList() async* {
     try {
-      final stream = _remoteDataSource.attendanceList();
-  
+      final stream = _remoteDataSource.watchAttendanceList();
+
       await for (final dtos in stream) {
         final entities = dtos.map((dto) => dto.toEntity()).toList();
         yield Result.success(entities);
       }
     } catch (e, st) {
-      yield handleException('attendanceList', e, st);
+      yield handleException('watchAttendanceList', e, st);
     }
   }
 
