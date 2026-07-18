@@ -4,7 +4,7 @@ import '../requests/payment_status_request.dart';
 abstract interface class PaymentRemoteDataSource {
   // ------- Retrieval -------
 
-  Stream<PaymentDto> paymentStatus(
+  Stream<PaymentDto> watchPaymentStatus(
     PaymentStatusRequest paymentStatusRequest,
   );
 

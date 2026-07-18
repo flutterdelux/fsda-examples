@@ -14,7 +14,7 @@ class PaymentRemoteDataSourceImpl implements PaymentRemoteDataSource {
   // ------- Retrieval -------
 
   @override
-  Stream<PaymentDto> paymentStatus(
+  Stream<PaymentDto> watchPaymentStatus(
     PaymentStatusRequest paymentStatusRequest,
   ) async* {
     final path = '/payments/${paymentStatusRequest.id}/status/stream';

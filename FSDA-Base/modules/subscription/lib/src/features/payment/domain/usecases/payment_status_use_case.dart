@@ -13,6 +13,6 @@ class PaymentStatusUseCase
 
   @override
   StreamResult<PaymentEntity> call(PaymentStatusParam param) {
-    return _repository.paymentStatus(param);
+    return _repository.watchPaymentStatus(param);
   }
 }

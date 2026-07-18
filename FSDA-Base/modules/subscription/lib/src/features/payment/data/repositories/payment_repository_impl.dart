@@ -24,19 +24,19 @@ class PaymentRepositoryImpl
   // ------- Retrieval -------
 
   @override
-  StreamResult<PaymentEntity> paymentStatus(
+  StreamResult<PaymentEntity> watchPaymentStatus(
     PaymentStatusParam param,
   ) async* {
     try {
       final request = PaymentStatusRequest.fromParam(param);
-      final stream = _remoteDataSource.paymentStatus(request);
-  
+      final stream = _remoteDataSource.watchPaymentStatus(request);
+
       await for (final dto in stream) {
         final entity = dto.toEntity();
         yield Result.success(entity);
       }
     } catch (e, st) {
-      yield handleException('paymentStatus', e, st);
+      yield handleException('watchPaymentStatus', e, st);
     }
   }
 

@@ -5,7 +5,7 @@ import '../params/payment_status_param.dart';
 abstract interface class PaymentRepository {
   // ------- Retrieval -------
 
-  StreamResult<PaymentEntity> paymentStatus(PaymentStatusParam param);
+  StreamResult<PaymentEntity> watchPaymentStatus(PaymentStatusParam param);
 
   // ------- Mutation -------
 }
