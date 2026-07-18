@@ -5,7 +5,7 @@
   },
   "inboxAlt": "Inbox",
   "failureInboxNotFound": "Inbox tidak ditemukan",
-  "inboxMarkAllReadPopupMenuItem": "Mark All Read Inbox",
-  "inboxMarkAllReadSuccess": "Mark All Read Inbox successfully",
-  "inboxMarkAllReadOverlayMessage": "Mark All Read Inbox..."
+  "inboxMarkAllReadPopupMenuItem": "Tandai Semua Sebagai Dibaca",
+  "inboxMarkAllReadSuccess": "Tandai Semua Sebagai Dibaca berhasil",
+  "inboxMarkAllReadOverlayMessage": "Menandai Semua Sebagai Dibaca..."
 }
