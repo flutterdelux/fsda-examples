@@ -31,7 +31,7 @@ class NoteRepositoryImpl
   @override
   AsyncResult<List<NoteEntity>> getNoteList() async {
     final isOnline = await _networkInfo.hasInternetAccess;
-  
+
     if (isOnline) {
       try {
         final noteDtos = await _remoteDataSource.getNoteList();
@@ -44,11 +44,13 @@ class NoteRepositoryImpl
         );
       }
     }
-  
+
     try {
       final cachedNoteList = await _localDataSource.getNoteList();
-  
-      return Result.success(cachedNoteList.map((dto) => dto.toEntity()).toList());
+
+      return Result.success(
+        cachedNoteList.map((dto) => dto.toEntity()).toList(),
+      );
     } catch (e, st) {
       return handleException('getNoteList', e, st);
     }

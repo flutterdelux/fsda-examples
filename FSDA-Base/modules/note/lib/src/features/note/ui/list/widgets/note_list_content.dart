@@ -16,12 +16,7 @@ class NoteListContent extends StatelessWidget {
   Widget build(BuildContext context) {
     final padding = MediaQuery.paddingOf(context);
     return ListView.separated(
-      padding: EdgeInsets.fromLTRB(
-        0,
-        0,
-        0,
-        AppSpacing.screen + padding.bottom,
-      ),
+      padding: EdgeInsets.fromLTRB(0, 0, 0, AppSpacing.screen + padding.bottom),
       itemCount: list.length,
       separatorBuilder: (context, index) => const Divider(),
       itemBuilder: (context, index) {

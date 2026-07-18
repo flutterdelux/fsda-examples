@@ -3,13 +3,11 @@ import 'package:app_core/app_core.dart';
 import '../dtos/note_dto.dart';
 import 'note_local_data_source.dart';
 
-class NoteLocalDataSourceImpl
-    implements NoteLocalDataSource {
+class NoteLocalDataSourceImpl implements NoteLocalDataSource {
   final DatabaseClient _client;
 
-  const NoteLocalDataSourceImpl({
-    required DatabaseClient client,
-  }) : _client = client;
+  const NoteLocalDataSourceImpl({required DatabaseClient client})
+    : _client = client;
 
   // ------- Retrieval -------
 
@@ -25,7 +23,7 @@ class NoteLocalDataSourceImpl
       );
     }
   }
-  
+
   @override
   Future<void> cacheNoteList(List<NoteDto> data) async {
     try {

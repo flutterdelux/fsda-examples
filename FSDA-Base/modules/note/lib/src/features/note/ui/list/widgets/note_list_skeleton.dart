@@ -11,12 +11,7 @@ class NoteListSkeleton extends StatelessWidget {
   Widget build(BuildContext context) {
     final padding = MediaQuery.paddingOf(context);
     return ListView.separated(
-      padding: EdgeInsets.fromLTRB(
-        0,
-        0,
-        0,
-        AppSpacing.screen + padding.bottom,
-      ),
+      padding: EdgeInsets.fromLTRB(0, 0, 0, AppSpacing.screen + padding.bottom),
       itemBuilder: (context, index) {
         return const NoteListItemSkeleton();
       },

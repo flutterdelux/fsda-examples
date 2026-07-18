@@ -12,17 +12,17 @@ class NoteLocalizationsId extends NoteLocalizations {
   String get noteAlt => 'Note';
 
   @override
-  String get failureNoteNotFound => 'Note tidak ditemukan';
+  String get failureNoteNotFound => 'Catatan tidak ditemukan';
 
   @override
-  String get noteListTitle => 'Note List';
+  String get noteListTitle => 'Daftar Catatan';
 
   @override
-  String get noteListEmptyTitle => 'No Note Found';
+  String get noteListEmptyTitle => 'Tidak Ada Catatan';
 
   @override
-  String get noteListEmptyMessage => 'No note found at the moment';
+  String get noteListEmptyMessage => 'Tidak ada catatan saat ini';
 
   @override
-  String get noteListErrorTitle => 'Failed to Load Note List';
+  String get noteListErrorTitle => 'Gagal Memuat Daftar Catatan';
 }

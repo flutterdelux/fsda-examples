@@ -4,9 +4,9 @@
     "description": "========================= Note ========================="
   },
   "noteAlt": "Note",
-  "failureNoteNotFound": "Note tidak ditemukan",
-  "noteListTitle": "Note List",
-  "noteListEmptyTitle": "No Note Found",
-  "noteListEmptyMessage": "No note found at the moment",
-  "noteListErrorTitle": "Failed to Load Note List"
+  "failureNoteNotFound": "Catatan tidak ditemukan",
+  "noteListTitle": "Daftar Catatan",
+  "noteListEmptyTitle": "Tidak Ada Catatan",
+  "noteListEmptyMessage": "Tidak ada catatan saat ini",
+  "noteListErrorTitle": "Gagal Memuat Daftar Catatan"
 }

@@ -17,5 +17,3 @@ export 'ui/list/widgets/note_list_content.dart';
 export 'ui/list/widgets/note_list_empty_feedback.dart';
 export 'ui/list/widgets/note_list_error_feedback.dart';
 export 'ui/list/widgets/note_list_skeleton.dart';
-
-
