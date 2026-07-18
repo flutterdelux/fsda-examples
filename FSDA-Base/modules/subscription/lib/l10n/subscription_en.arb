@@ -1,0 +1,24 @@
+{
+  "@@locale": "en",
+  "@failureSubscriptionNotFound": {
+    "description": "========================= Failure ========================="
+  },
+  "failureSubscriptionNotFound": "Subscription not found",
+  "failurePaymentNotFound": "Payment not found",
+  "@paymentAlt": {
+    "description": "========================= Payment ========================="
+  },
+  "paymentAlt": "Payment",
+  "paymentIdLabel": "Payment ID",
+  "paymentCreatedAtLabel": "Created At",
+  "paymentStatusTitle": "Your Payment Status",
+  "paymentStatusUnpaidLabel": "Unpaid",
+  "paymentStatusUnpaidMessage": "Please complete the payment process within the specified time frame to avoid cancellation",
+  "paymentStatusPaidLabel": "Paid",
+  "paymentStatusPaidMessage": "Your payment has been confirmed",
+  "paymentStatusExpiredLabel": "Expired",
+  "paymentStatusExpiredMessage": "Your payment has expired",
+  "paymentStatusErrorTitle": "Failed to Load Payment Status",
+  "paymentStatusActionBackToDashboard": "Back to Dashboard",
+  "paymentStatusActionPayNow": "Pay Now"
+}

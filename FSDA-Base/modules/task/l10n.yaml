@@ -1,0 +1,6 @@
+arb-dir: lib/l10n
+template-arb-file: task_en.arb
+output-localization-file: task_localizations.dart
+output-class: TaskLocalizations
+output-dir: lib/src/generated
+untranslated-messages-file: missing_keys.json

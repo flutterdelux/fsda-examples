@@ -1,0 +1,6 @@
+arb-dir: lib/l10n
+template-arb-file: finance_en.arb
+output-localization-file: finance_localizations.dart
+output-class: FinanceLocalizations
+output-dir: lib/src/generated
+untranslated-messages-file: missing_keys.json

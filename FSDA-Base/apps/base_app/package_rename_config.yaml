@@ -1,0 +1,31 @@
+package_rename_config:
+  android:
+    app_name: Base App
+    package_name: com.fdelux.baseapp
+    override_old_package: com.example.base_app
+    lang: kotlin
+
+  ios:
+    app_name: Base App
+    bundle_name: baseapp
+    bundle_id: com.fdelux.baseapp
+
+  web:
+    app_name: Base App
+    description: Base App
+
+  linux:
+    app_name: Base App
+    package_name: com.fdelux.baseapp
+    exe_name: baseapp-linux-x64
+
+  windows:
+    app_name: Base App
+    organization: FDelux
+    copyright_notice: Copyright ©️ 2026 FDelux. All rights reserved.
+    exe_name: baseapp-win32
+
+  macos:
+    app_name: Base App
+    bundle_id: com.fdelux.baseapp
+    copyright_notice: Copyright ©️ 2026 FDelux. All rights reserved.

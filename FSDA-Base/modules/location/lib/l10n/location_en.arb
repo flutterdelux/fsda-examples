@@ -1,0 +1,16 @@
+{
+  "@@locale": "en",
+  "@failureLocationNotFound": {
+    "description": "========================= Failure ========================="
+  },
+  "failureLocationNotFound": "Location not found",
+  "failureCityNotFound": "City not found",
+  "@cityAlt": {
+    "description": "========================= City ========================="
+  },
+  "cityAlt": "City",
+  "cityListTitle": "City List",
+  "cityListEmptyTitle": "No City Found",
+  "cityListEmptyMessage": "No city found at the moment",
+  "cityListErrorTitle": "Failed to Load City List"
+}

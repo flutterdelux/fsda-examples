@@ -1,0 +1,19 @@
+{
+  "@@locale": "en",
+  "@failureFinanceNotFound": {
+    "description": "========================= Failure ========================="
+  },
+  "failureFinanceNotFound": "Finance not found",
+  "failureWalletNotFound": "Wallet not found",
+  "@walletAlt": {
+    "description": "========================= Wallet ========================="
+  },
+  "walletAlt": "Wallet",
+  "walletDeletePopupMenuItem": "Delete Wallet",
+  "walletDeleteSuccess": "Delete Wallet successfully",
+  "walletDeleteOverlayMessage": "Delete Wallet...",
+  "walletDeleteDialogTitle": "Delete Wallet",
+  "walletDeleteDialogMessage": "Are you sure you want to Delete this Wallet?",
+  "walletDeleteDialogConfirm": "Yes",
+  "walletDeleteDialogCancel": "Cancel"
+}

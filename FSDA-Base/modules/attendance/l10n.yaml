@@ -1,0 +1,6 @@
+arb-dir: lib/l10n
+template-arb-file: attendance_en.arb
+output-localization-file: attendance_localizations.dart
+output-class: AttendanceLocalizations
+output-dir: lib/src/generated
+untranslated-messages-file: missing_keys.json

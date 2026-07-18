@@ -1,0 +1,6 @@
+arb-dir: lib/l10n
+template-arb-file: location_en.arb
+output-localization-file: location_localizations.dart
+output-class: LocationLocalizations
+output-dir: lib/src/generated
+untranslated-messages-file: missing_keys.json

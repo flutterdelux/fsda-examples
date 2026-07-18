@@ -1,0 +1,10 @@
+{
+  "@@locale": "id",
+  "@productAlt": {
+    "description": "========================= Product ========================="
+  },
+  "productAlt": "Product",
+  "failureProductNotFound": "Product tidak ditemukan",
+  "productDetailTitle": "Product Detail",
+  "productDetailErrorTitle": "Failed to Load Product"
+}

@@ -1,0 +1,16 @@
+{
+  "@@locale": "id",
+  "@queueAlt": {
+    "description": "========================= Queue ========================="
+  },
+  "queueAlt": "Queue",
+  "failureQueueNotFound": "Queue tidak ditemukan",
+  "queueTakeTitle": "Ambil Antrian",
+  "queueTakeErrorTitle": "Gagal Memuat Antrian",
+  "queueTakeAction": "Ambil Antrian",
+  "queueTakeInitialMessage": "Anda belum mengambil antrian. Silakan ambil antrian untuk melanjutkan.",
+  "queueStatusLabel": "Status",
+  "queueStatusWaiting": "Menunggu",
+  "queueStatusCalled": "Dipanggil",
+  "queueStatusCompleted": "Selesai"
+}

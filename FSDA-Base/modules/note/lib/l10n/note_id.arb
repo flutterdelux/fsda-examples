@@ -1,0 +1,12 @@
+{
+  "@@locale": "id",
+  "@noteAlt": {
+    "description": "========================= Note ========================="
+  },
+  "noteAlt": "Note",
+  "failureNoteNotFound": "Note tidak ditemukan",
+  "noteListTitle": "Note List",
+  "noteListEmptyTitle": "No Note Found",
+  "noteListEmptyMessage": "No note found at the moment",
+  "noteListErrorTitle": "Failed to Load Note List"
+}

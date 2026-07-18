@@ -1,0 +1,24 @@
+{
+  "@@locale": "id",
+  "@failureSubscriptionNotFound": {
+    "description": "========================= Failure ========================="
+  },
+  "failureSubscriptionNotFound": "Subscription tidak ditemukan",
+  "failurePaymentNotFound": "Payment tidak ditemukan",
+  "@paymentAlt": {
+    "description": "========================= Payment ========================="
+  },
+  "paymentAlt": "Payment",
+  "paymentIdLabel": "ID Pembayaran",
+  "paymentCreatedAtLabel": "Dibuat Pada",
+  "paymentStatusTitle": "Status Pembayaran Anda",
+  "paymentStatusUnpaidLabel": "Belum Dibayar",
+  "paymentStatusUnpaidMessage": "Silakan selesaikan proses pembayaran dalam jangka waktu yang ditentukan untuk menghindari pembatalan",
+  "paymentStatusPaidLabel": "Sudah Dibayar",
+  "paymentStatusPaidMessage": "Pembayaran Anda telah dikonfirmasi",
+  "paymentStatusExpiredLabel": "Kadaluwarsa",
+  "paymentStatusExpiredMessage": "Pembayaran Anda telah kadaluwarsa",
+  "paymentStatusErrorTitle": "Gagal Memuat Status Pembayaran",
+  "paymentStatusActionBackToDashboard": "Kembali ke Dashboard",
+  "paymentStatusActionPayNow": "Bayar Sekarang"
+}

@@ -1,0 +1,6 @@
+arb-dir: lib/l10n
+template-arb-file: inbox_en.arb
+output-localization-file: inbox_localizations.dart
+output-class: InboxLocalizations
+output-dir: lib/src/generated
+untranslated-messages-file: missing_keys.json

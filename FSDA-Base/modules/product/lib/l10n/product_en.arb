@@ -1,0 +1,10 @@
+{
+  "@@locale": "en",
+  "@productAlt": {
+    "description": "========================= Product ========================="
+  },
+  "productAlt": "Product",
+  "failureProductNotFound": "Product not found",
+  "productDetailTitle": "Product Detail",
+  "productDetailErrorTitle": "Failed to Load Product"
+}

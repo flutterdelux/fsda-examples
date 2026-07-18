@@ -1,0 +1,11 @@
+import 'package:app_ui/app_ui.dart';
+import 'package:flutter/material.dart';
+
+class CityListItemSkeleton extends StatelessWidget {
+  const CityListItemSkeleton({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const AppListTileSkeleton();
+  }
+}

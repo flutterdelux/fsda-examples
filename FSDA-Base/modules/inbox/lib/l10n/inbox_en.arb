@@ -1,0 +1,11 @@
+{
+  "@@locale": "en",
+  "@inboxAlt": {
+    "description": "========================= Inbox ========================="
+  },
+  "inboxAlt": "Inbox",
+  "failureInboxNotFound": "Inbox not found",
+  "inboxMarkAllReadPopupMenuItem": "Mark All Read Inbox",
+  "inboxMarkAllReadSuccess": "Mark All Read Inbox successfully",
+  "inboxMarkAllReadOverlayMessage": "Mark All Read Inbox..."
+}

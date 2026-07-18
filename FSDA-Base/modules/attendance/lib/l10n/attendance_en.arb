@@ -1,0 +1,12 @@
+{
+  "@@locale": "en",
+  "@attendanceAlt": {
+    "description": "========================= Attendance ========================="
+  },
+  "attendanceAlt": "Attendance",
+  "failureAttendanceNotFound": "Attendance not found",
+  "attendanceListTitle": "Attendance List",
+  "attendanceListEmptyTitle": "No Attendance Found",
+  "attendanceListEmptyMessage": "No attendance found at the moment",
+  "attendanceListErrorTitle": "Failed to Load Attendance List"
+}

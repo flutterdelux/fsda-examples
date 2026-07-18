@@ -1,0 +1,17 @@
+// data
+export 'data/datasources/queue_remote_data_source.dart';
+export 'data/datasources/queue_remote_data_source_impl.dart';
+export 'data/repositories/queue_repository_impl.dart';
+// domain
+export 'domain/entities/queue_entity.dart';
+export 'domain/repositories/queue_repository.dart';
+export 'domain/usecases/queue_take_use_case.dart';
+// logic
+export 'logic/take/queue_take_cubit.dart';
+export 'logic/take/queue_take_state.dart';
+// ui
+export 'ui/take/views/queue_take_view.dart';
+export 'ui/take/widgets/queue_take_content.dart';
+export 'ui/take/widgets/queue_take_error_feedback.dart';
+export 'ui/take/widgets/queue_take_initial_feedback.dart';
+export 'ui/take/widgets/queue_take_skeleton.dart';

@@ -1,0 +1,18 @@
+{
+  "@@locale": "id",
+  "@taskAlt": {
+    "description": "========================= Task ========================="
+  },
+  "taskAlt": "Task",
+  "failureTaskNotFound": "Task tidak ditemukan",
+  "failureTaskFormInvalid": "Please fill in all required fields correctly",
+  "taskCreateTitle": "Create Task",
+  "taskCreateAction": "Create",
+  "taskCreateSuccess": "Task created successfully",
+  "taskFieldTitleLabel": "Title",
+  "taskFieldTitleHint": "Enter title...",
+  "taskFieldTitleInvalidEmpty": "Title cannot be empty",
+  "taskFieldDescriptionLabel": "Description",
+  "taskFieldDescriptionHint": "Enter description...",
+  "taskFieldDescriptionInvalidEmpty": "Description cannot be empty"
+}

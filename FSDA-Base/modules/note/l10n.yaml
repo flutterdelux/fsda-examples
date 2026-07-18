@@ -1,0 +1,6 @@
+arb-dir: lib/l10n
+template-arb-file: note_en.arb
+output-localization-file: note_localizations.dart
+output-class: NoteLocalizations
+output-dir: lib/src/generated
+untranslated-messages-file: missing_keys.json

@@ -1,0 +1,6 @@
+arb-dir: lib/l10n
+template-arb-file: queue_en.arb
+output-localization-file: queue_localizations.dart
+output-class: QueueLocalizations
+output-dir: lib/src/generated
+untranslated-messages-file: missing_keys.json

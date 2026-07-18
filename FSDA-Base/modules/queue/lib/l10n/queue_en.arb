@@ -1,0 +1,16 @@
+{
+  "@@locale": "en",
+  "@queueAlt": {
+    "description": "========================= Queue ========================="
+  },
+  "queueAlt": "Queue",
+  "failureQueueNotFound": "Queue not found",
+  "queueTakeTitle": "Queue Take",
+  "queueTakeErrorTitle": "Failed to Load Queue",
+  "queueTakeAction": "Take Queue",
+  "queueTakeInitialMessage": "You have not taken a queue yet. Please take a queue to proceed.",
+  "queueStatusLabel": "Status",
+  "queueStatusWaiting": "Waiting",
+  "queueStatusCalled": "Called",
+  "queueStatusCompleted": "Completed"
+}
