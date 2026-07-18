@@ -3,10 +3,10 @@ import 'package:app_ui/app_ui.dart';
 import 'package:flutter/material.dart';
 import '../../../../../generated/product_localizations.dart';
 
-class ProductDetailError extends StatelessWidget {
+class ProductDetailErrorFeedback extends StatelessWidget {
   final String message;
   final VoidCallback onRetry;
-  const ProductDetailError({
+  const ProductDetailErrorFeedback({
     super.key,
     required this.message,
     required this.onRetry,

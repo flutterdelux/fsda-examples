@@ -24,10 +24,10 @@ class ProductRepositoryImpl
   // ------- Retrieval -------
 
   @override
-  AsyncResult<ProductEntity> productDetail(ProductDetailParam param) async {
+  AsyncResult<ProductEntity> getProductDetail(ProductDetailParam param) async {
     try {
       final request = ProductDetailRequest.fromParam(param);
-      final productDto = await _remoteDataSource.productDetail(request);
+      final productDto = await _remoteDataSource.getProductDetail(request);
       return Result.success(productDto.toEntity());
     } catch (e, st) {
       return handleException('productDetail', e, st);

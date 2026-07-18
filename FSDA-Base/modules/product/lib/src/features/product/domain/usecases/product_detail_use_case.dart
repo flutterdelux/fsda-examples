@@ -12,5 +12,5 @@ class ProductDetailUseCase extends UseCase<ProductEntity, ProductDetailParam> {
 
   @override
   AsyncResult<ProductEntity> call(ProductDetailParam param) =>
-      _repository.productDetail(param);
+      _repository.getProductDetail(param);
 }

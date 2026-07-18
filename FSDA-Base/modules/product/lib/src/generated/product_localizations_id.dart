@@ -15,8 +15,8 @@ class ProductLocalizationsId extends ProductLocalizations {
   String get failureProductNotFound => 'Product tidak ditemukan';
 
   @override
-  String get productDetailTitle => 'Product Detail';
+  String get productDetailTitle => 'Detail Produk';
 
   @override
-  String get productDetailErrorTitle => 'Failed to Load Product';
+  String get productDetailErrorTitle => 'Gagal Memuat Produk';
 }

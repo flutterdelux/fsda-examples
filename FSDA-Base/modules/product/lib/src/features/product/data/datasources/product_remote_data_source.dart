@@ -4,7 +4,7 @@ import '../requests/product_detail_request.dart';
 abstract interface class ProductRemoteDataSource {
   // ------- Retrieval -------
 
-  Future<ProductDto> productDetail(ProductDetailRequest request);
+  Future<ProductDto> getProductDetail(ProductDetailRequest request);
 
   // ------- Mutation -------
 }

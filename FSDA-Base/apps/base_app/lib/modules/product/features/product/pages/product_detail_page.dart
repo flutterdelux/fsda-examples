@@ -34,7 +34,7 @@ class ProductDetailPage extends StatelessWidget with PageProviderMixin {
       builder: (_, state) => state.maybeWhen(
         orElse: () => const ProductDetailSkeleton(),
         loading: () => const ProductDetailSkeleton(),
-        failure: (failure) => ProductDetailError(
+        failure: (failure) => ProductDetailErrorFeedback(
           message: failure.localizeAny(context),
           onRetry: () => _getProductDetail(context),
         ),

@@ -5,7 +5,7 @@ import '../params/product_detail_param.dart';
 abstract interface class ProductRepository {
   // ------- Retrieval -------
 
-  AsyncResult<ProductEntity> productDetail(ProductDetailParam param);
+  AsyncResult<ProductEntity> getProductDetail(ProductDetailParam param);
 
   // ------- Mutation -------
 }

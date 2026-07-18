@@ -15,11 +15,11 @@ class ProductRemoteDataSourceImpl implements ProductRemoteDataSource {
   // ------- Retrieval -------
 
   @override
-  Future<ProductDto> productDetail(ProductDetailRequest request) async {
+  Future<ProductDto> getProductDetail(ProductDetailRequest request) async {
     final response = await _apiClient.get<Map<String, dynamic>>(
       '/products/${request.id}',
     );
-  
+
     if (response.statusCode == 200) {
       final productDetailResponse = ProductDetailResponse.fromJson(
         response.body,
@@ -27,17 +27,14 @@ class ProductRemoteDataSourceImpl implements ProductRemoteDataSource {
       if (productDetailResponse.data != null) {
         return productDetailResponse.data!;
       }
-  
+
       throw CoreException.serverError(
         msg: 'ProductDetail data is null',
         st: StackTrace.current,
       );
     }
-  
-    throw ProductException.fromApiResponse(
-      response,
-      st: StackTrace.current,
-    );
+
+    throw ProductException.fromApiResponse(response, st: StackTrace.current);
   }
 
   // ------- Mutation -------
