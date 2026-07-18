@@ -8,10 +8,9 @@ import 'wallet_delete_state.dart';
 class WalletDeleteCubit extends Cubit<WalletDeleteState> {
   final WalletDeleteUseCase _useCase;
 
-  WalletDeleteCubit({
-    required WalletDeleteUseCase walletDeleteUseCase,
-  }) : _useCase = walletDeleteUseCase,
-       super(const WalletDeleteState.initial());
+  WalletDeleteCubit({required WalletDeleteUseCase walletDeleteUseCase})
+    : _useCase = walletDeleteUseCase,
+      super(const WalletDeleteState.initial());
 
   Future<void> deleteWallet(WalletDeleteParam param) async {
     emit(const WalletDeleteState.loading());

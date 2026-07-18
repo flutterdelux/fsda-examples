@@ -27,7 +27,7 @@ class WalletRepositoryImpl
   @override
   AsyncResult<void> deleteWallet(WalletDeleteParam param) async {
     final request = WalletDeleteRequest.fromParam(param);
-  
+
     try {
       await _remoteDataSource.deleteWallet(request);
       return const Result.success(null);

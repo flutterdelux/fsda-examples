@@ -9,11 +9,11 @@
     "description": "========================= Wallet ========================="
   },
   "walletAlt": "Wallet",
-  "walletDeletePopupMenuItem": "Delete Wallet",
-  "walletDeleteSuccess": "Delete Wallet successfully",
-  "walletDeleteOverlayMessage": "Delete Wallet...",
-  "walletDeleteDialogTitle": "Delete Wallet",
-  "walletDeleteDialogMessage": "Are you sure you want to Delete this Wallet?",
-  "walletDeleteDialogConfirm": "Yes",
-  "walletDeleteDialogCancel": "Cancel"
+  "walletDeletePopupMenuItem": "Hapus Dompet",
+  "walletDeleteSuccess": "Berhasil menghapus Dompet",
+  "walletDeleteOverlayMessage": "Menghapus Dompet...",
+  "walletDeleteDialogTitle": "Hapus Dompet",
+  "walletDeleteDialogMessage": "Apakah Anda yakin ingin menghapus Dompet ini?",
+  "walletDeleteDialogConfirm": "Ya",
+  "walletDeleteDialogCancel": "Batal"
 }
