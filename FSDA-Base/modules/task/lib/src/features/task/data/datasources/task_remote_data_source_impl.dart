@@ -27,10 +27,10 @@ class TaskRemoteDataSourceImpl implements TaskRemoteDataSource {
       if (taskCreateResponse.data != null) {
         return taskCreateResponse.data!;
       }
-  
+
       throw const CoreException.serverError();
     }
-  
+
     throw TaskException.fromApiResponse(response, st: StackTrace.current);
   }
 }

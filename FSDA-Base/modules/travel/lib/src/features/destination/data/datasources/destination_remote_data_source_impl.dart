@@ -25,10 +25,10 @@ class DestinationRemoteDataSourceImpl implements DestinationRemoteDataSource {
       if (destinationPopularResponse.data != null) {
         return destinationPopularResponse.data!;
       }
-  
+
       throw const CoreException.serverError();
     }
-  
+
     throw TravelException.fromApiResponse(response, st: StackTrace.current);
   }
 

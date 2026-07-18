@@ -15,11 +15,12 @@ class InboxLocalizationsId extends InboxLocalizations {
   String get failureInboxNotFound => 'Inbox tidak ditemukan';
 
   @override
-  String get inboxMarkAllReadPopupMenuItem => 'Mark All Read Inbox';
+  String get inboxMarkAllReadPopupMenuItem => 'Tandai Semua Sebagai Dibaca';
 
   @override
-  String get inboxMarkAllReadSuccess => 'Mark All Read Inbox successfully';
+  String get inboxMarkAllReadSuccess => 'Tandai Semua Sebagai Dibaca berhasil';
 
   @override
-  String get inboxMarkAllReadOverlayMessage => 'Mark All Read Inbox...';
+  String get inboxMarkAllReadOverlayMessage =>
+      'Menandai Semua Sebagai Dibaca...';
 }

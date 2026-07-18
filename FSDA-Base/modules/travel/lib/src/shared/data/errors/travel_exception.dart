@@ -11,18 +11,25 @@ sealed class TravelException with _$TravelException implements AppException {
 
   const factory TravelException.travelNotFound({String? msg, StackTrace? st}) =
       _TravelNotFound;
-  const factory TravelException.destinationNotFound({String? msg, StackTrace? st}) =
-      _DestinationNotFound;
-
+  const factory TravelException.destinationNotFound({
+    String? msg,
+    StackTrace? st,
+  }) = _DestinationNotFound;
 
   @override
-  String get message => when(travelNotFound: (msg, _) => msg ?? 'Travel not found', destinationNotFound: (msg, _) => msg ?? 'Destination not found');
+  String get message => when(
+    travelNotFound: (msg, _) => msg ?? 'Travel not found',
+    destinationNotFound: (msg, _) => msg ?? 'Destination not found',
+  );
 
   @override
   StackTrace? get stackTrace => st;
 
   @override
-  Failure toFailure() => when(travelNotFound: (_, _) => TravelFailure.travelNotFound, destinationNotFound: (_, _) => TravelFailure.destinationNotFound);
+  Failure toFailure() => when(
+    travelNotFound: (_, _) => TravelFailure.travelNotFound,
+    destinationNotFound: (_, _) => TravelFailure.destinationNotFound,
+  );
 
   static AppException fromApiResponse(ApiResponse response, {StackTrace? st}) {
     return CoreException.fromException(response.body.toString(), st: st);

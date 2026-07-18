@@ -4,7 +4,7 @@
     "description": "========================= Queue ========================="
   },
   "queueAlt": "Queue",
-  "failureQueueNotFound": "Queue tidak ditemukan",
+  "failureQueueNotFound": "Antrian tidak ditemukan",
   "queueTakeTitle": "Ambil Antrian",
   "queueTakeErrorTitle": "Gagal Memuat Antrian",
   "queueTakeAction": "Ambil Antrian",

@@ -12,36 +12,36 @@ class TaskLocalizationsId extends TaskLocalizations {
   String get taskAlt => 'Task';
 
   @override
-  String get failureTaskNotFound => 'Task tidak ditemukan';
+  String get failureTaskNotFound => 'Tugas tidak ditemukan';
 
   @override
   String get failureTaskFormInvalid =>
-      'Please fill in all required fields correctly';
+      'Harap isi semua input yang diperlukan dengan benar';
 
   @override
-  String get taskCreateTitle => 'Create Task';
+  String get taskCreateTitle => 'Buat Tugas';
 
   @override
-  String get taskCreateAction => 'Create';
+  String get taskCreateAction => 'Buat';
 
   @override
-  String get taskCreateSuccess => 'Task created successfully';
+  String get taskCreateSuccess => 'Tugas berhasil dibuat';
 
   @override
-  String get taskFieldTitleLabel => 'Title';
+  String get taskFieldTitleLabel => 'Judul';
 
   @override
-  String get taskFieldTitleHint => 'Enter title...';
+  String get taskFieldTitleHint => 'Masukkan judul...';
 
   @override
-  String get taskFieldTitleInvalidEmpty => 'Title cannot be empty';
+  String get taskFieldTitleInvalidEmpty => 'Judul tidak boleh kosong';
 
   @override
-  String get taskFieldDescriptionLabel => 'Description';
+  String get taskFieldDescriptionLabel => 'Deskripsi';
 
   @override
-  String get taskFieldDescriptionHint => 'Enter description...';
+  String get taskFieldDescriptionHint => 'Masukkan deskripsi...';
 
   @override
-  String get taskFieldDescriptionInvalidEmpty => 'Description cannot be empty';
+  String get taskFieldDescriptionInvalidEmpty => 'Deskripsi tidak boleh kosong';
 }

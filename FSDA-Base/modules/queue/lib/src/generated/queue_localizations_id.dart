@@ -12,7 +12,7 @@ class QueueLocalizationsId extends QueueLocalizations {
   String get queueAlt => 'Queue';
 
   @override
-  String get failureQueueNotFound => 'Queue tidak ditemukan';
+  String get failureQueueNotFound => 'Antrian tidak ditemukan';
 
   @override
   String get queueTakeTitle => 'Ambil Antrian';

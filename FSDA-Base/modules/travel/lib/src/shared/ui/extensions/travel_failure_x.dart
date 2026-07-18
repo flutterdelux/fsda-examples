@@ -9,7 +9,6 @@ extension TravelFailureX on TravelFailure {
     return switch (this) {
       TravelFailure.travelNotFound => l10n.failureTravelNotFound,
       TravelFailure.destinationNotFound => l10n.failureDestinationNotFound,
-
     };
   }
 }

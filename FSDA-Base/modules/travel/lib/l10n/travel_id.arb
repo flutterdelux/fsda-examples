@@ -9,8 +9,8 @@
     "description": "========================= Destination ========================="
   },
   "destinationAlt": "Destination",
-  "destinationPopularTitle": "Destination Popular",
-  "destinationPopularEmptyTitle": "No Destination Found",
-  "destinationPopularEmptyMessage": "No destination found at the moment",
-  "destinationPopularErrorTitle": "Failed to Load Destination Popular"
+  "destinationPopularTitle": "Destinasi Populer",
+  "destinationPopularEmptyTitle": "Tidak Ada Destinasi Ditemukan",
+  "destinationPopularEmptyMessage": "Tidak ada destinasi yang ditemukan saat ini",
+  "destinationPopularErrorTitle": "Gagal Memuat Destinasi Populer"
 }

@@ -18,16 +18,15 @@ class TravelLocalizationsId extends TravelLocalizations {
   String get destinationAlt => 'Destination';
 
   @override
-  String get destinationPopularTitle => 'Destination Popular';
+  String get destinationPopularTitle => 'Destinasi Populer';
 
   @override
-  String get destinationPopularEmptyTitle => 'No Destination Found';
+  String get destinationPopularEmptyTitle => 'Tidak Ada Destinasi Ditemukan';
 
   @override
   String get destinationPopularEmptyMessage =>
-      'No destination found at the moment';
+      'Tidak ada destinasi yang ditemukan saat ini';
 
   @override
-  String get destinationPopularErrorTitle =>
-      'Failed to Load Destination Popular';
+  String get destinationPopularErrorTitle => 'Gagal Memuat Destinasi Populer';
 }

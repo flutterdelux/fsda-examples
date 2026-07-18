@@ -15,5 +15,3 @@ export 'ui/popular/widgets/destination_popular_empty_feedback.dart';
 export 'ui/popular/widgets/destination_popular_error_feedback.dart';
 export 'ui/popular/widgets/destination_popular_section.dart';
 export 'ui/popular/widgets/destination_popular_skeleton.dart';
-
-

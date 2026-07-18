@@ -18,24 +18,24 @@ class FinanceLocalizationsId extends FinanceLocalizations {
   String get walletAlt => 'Wallet';
 
   @override
-  String get walletDeletePopupMenuItem => 'Delete Wallet';
+  String get walletDeletePopupMenuItem => 'Hapus Dompet';
 
   @override
-  String get walletDeleteSuccess => 'Delete Wallet successfully';
+  String get walletDeleteSuccess => 'Berhasil menghapus Dompet';
 
   @override
-  String get walletDeleteOverlayMessage => 'Delete Wallet...';
+  String get walletDeleteOverlayMessage => 'Menghapus Dompet...';
 
   @override
-  String get walletDeleteDialogTitle => 'Delete Wallet';
+  String get walletDeleteDialogTitle => 'Hapus Dompet';
 
   @override
   String get walletDeleteDialogMessage =>
-      'Are you sure you want to Delete this Wallet?';
+      'Apakah Anda yakin ingin menghapus Dompet ini?';
 
   @override
-  String get walletDeleteDialogConfirm => 'Yes';
+  String get walletDeleteDialogConfirm => 'Ya';
 
   @override
-  String get walletDeleteDialogCancel => 'Cancel';
+  String get walletDeleteDialogCancel => 'Batal';
 }
